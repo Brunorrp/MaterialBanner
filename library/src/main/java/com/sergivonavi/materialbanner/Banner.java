@@ -700,7 +700,13 @@ public class Banner extends ViewGroup implements BannerInterface {
         TextViewCompat.setTextAppearance(mLeftButton, resId);
         TextViewCompat.setTextAppearance(mRightButton, resId);
     }
+    public void setLeftButtonTextColor(@ColorRes int colorId) {
+        mLeftButton.setTextColor(ContextCompat.getColor(getContext(), colorId));
+    }
 
+    public void setRightButtonTextColor(@ColorRes int colorId) {
+        mRightButton.setTextColor(ContextCompat.getColor(getContext(), colorId));
+    }
     /**
      * Sets the text color of both buttons.
      *
