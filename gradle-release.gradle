@@ -62,31 +62,3 @@ artifacts {
     archives androidSourcesJar
     archives androidJavadocsJar
 }
-
-// Bintray
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
-
-bintray {
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apikey")
-
-    configurations = ['archives']
-    pkg {
-        repo = BINTRAY_REPO
-        name = BINTRAY_NAME
-        desc = POM_DESCRIPTION
-        websiteUrl = POM_SITE_URL
-        vcsUrl = POM_GIT_URL
-        licenses = POM_LICENCES
-        publish = true
-        publicDownloadNumbers = true
-        version {
-            desc = POM_DESCRIPTION
-            // released  = new Date()
-            gpg {
-                sign = true
-                passphrase = properties.getProperty("bintray.gpg.password")
-            }
-        }
-    }
-}

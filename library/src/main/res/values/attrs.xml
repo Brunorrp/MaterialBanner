@@ -27,6 +27,10 @@
         <!-- Buttons text color. -->
         <attr name="buttonsTextColor" format="color" />
         <!-- Buttons' ripple color. -->
+        <attr name="leftButtonTextColor" format="color" />
+        <!-- Buttons' ripple color. -->
+        <attr name="rightButtonTextColor" format="color" />
+        <!-- Buttons' ripple color. -->
         <attr name="buttonsRippleColor" format="color" />
         <!-- Banner background color. -->
         <attr name="backgroundColor" format="color" />

@@ -301,6 +301,12 @@ public class Banner extends ViewGroup implements BannerInterface {
             mLeftButton.setTextColor(a.getColor(R.styleable.Banner_buttonsTextColor, Color.BLACK));
             mRightButton.setTextColor(a.getColor(R.styleable.Banner_buttonsTextColor, Color.BLACK));
         }
+        if (a.hasValue(R.styleable.Banner_leftButtonTextColor)) {
+            mLeftButton.setTextColor(a.getColor(R.styleable.Banner_leftButtonTextColor, Color.BLACK));
+        }
+        if (a.hasValue(R.styleable.Banner_rightButtonTextColor)) {
+            mRightButton.setTextColor(a.getColor(R.styleable.Banner_rightButtonTextColor, Color.BLACK));
+        }
         if (a.hasValue(R.styleable.Banner_buttonsRippleColor)) {
             mLeftButton.setRippleColor(ColorStateList.valueOf(
                     a.getColor(R.styleable.Banner_buttonsRippleColor, Color.BLACK)));
