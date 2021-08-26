@@ -16,12 +16,6 @@ install {
                 description POM_DESCRIPTION
                 url POM_SITE_URL
 
-                licenses {
-                    license {
-                        name POM_LICENCE_NAME
-                        url POM_LICENCE_URL
-                    }
-                }
                 developers {
                     developer {
                         id POM_DEVELOPER_ID
@@ -70,7 +64,6 @@ artifacts {
 }
 
 // Bintray
-Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
 bintray {
