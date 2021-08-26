@@ -23,3 +23,5 @@ dependencies {
     implementation "androidx.core:core:${versions.androidX_core}"
     implementation "com.google.android.material:material:${versions.material}"
 }
+
+apply from: '../gradle-release.gradle'
