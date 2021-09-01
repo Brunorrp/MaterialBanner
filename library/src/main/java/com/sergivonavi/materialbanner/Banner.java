@@ -307,6 +307,12 @@ public class Banner extends ViewGroup implements BannerInterface {
         if (a.hasValue(R.styleable.Banner_rightButtonTextColor)) {
             mRightButton.setTextColor(a.getColor(R.styleable.Banner_rightButtonTextColor, Color.BLACK));
         }
+        if (a.hasValue(R.styleable.Banner_leftButtonBackgroundColor)) {
+            mLeftButton.setBackgroundColor(a.getColor(R.styleable.Banner_leftButtonTextColor, Color.WHITE));
+        }
+        if (a.hasValue(R.styleable.Banner_rightButtonBackgroundColor)) {
+            mRightButton.setBackgroundColor(a.getColor(R.styleable.Banner_leftButtonTextColor, Color.WHITE));
+        }
         if (a.hasValue(R.styleable.Banner_buttonsRippleColor)) {
             mLeftButton.setRippleColor(ColorStateList.valueOf(
                     a.getColor(R.styleable.Banner_buttonsRippleColor, Color.BLACK)));
@@ -712,6 +718,13 @@ public class Banner extends ViewGroup implements BannerInterface {
 
     public void setRightButtonTextColor(@ColorRes int colorId) {
         mRightButton.setTextColor(ContextCompat.getColor(getContext(), colorId));
+    }
+    public void setLeftButtonBackgroundColor(@ColorRes int colorId) {
+        mLeftButton.setBackgroundColor(ContextCompat.getColor(getContext(), colorId));
+    }
+
+    public void setRightButtonBackgroundColor(@ColorRes int colorId) {
+        mRightButton.setBackgroundColor(ContextCompat.getColor(getContext(), colorId));
     }
     /**
      * Sets the text color of both buttons.
