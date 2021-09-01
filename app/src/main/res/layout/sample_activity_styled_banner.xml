@@ -11,6 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:backgroundColor="@color/custom_background"
+        app:leftButtonBackgroundColor="@color/design_default_color_primary_dark"
+        app:rightButtonBackgroundColor="@color/custom_buttons_text"
         app:buttonLeftText="@string/banner_btn_left"
         app:buttonRightText="@string/banner_btn_right"
         app:buttonsRippleColor="@color/custom_buttons_text"
